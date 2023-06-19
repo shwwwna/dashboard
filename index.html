@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, width=device-width" />
+		<link rel="stylesheet" href="./global.css" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./salesforce-lightning-design-system.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" />
+	</head>
+	<body>
+		<main class="page-wrapper">
+			<div class="container">
+				<div class="header-container">
+					<strong>Good day, John</strong>
+					<p>Acme Inc.</p>
+				</div>
+				<div class="slds-notify slds-notify_alert" role="alert">
+					<span class="slds-assistive-text">info</span>
+					<span
+						class="slds-icon_container slds-icon-utility-user slds-m-right_x-small"
+						title="Description of icon when needed">
+						<svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+							<use
+								xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#user"></use>
+						</svg>
+					</span>
+					<h2>You have 1 unread Quote.</h2>
+					<div class="slds-notify__close">
+						<button
+							class="slds-button slds-button_icon slds-button_icon-small slds-button_icon-inverse"
+							title="Close">
+							<svg class="slds-button__icon" aria-hidden="true">
+								<use
+									xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+							</svg>
+							<span class="slds-assistive-text">Close</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="button-container">
+					<button class="button" onclick="alert('Clicked')">
+						<div class="icon-container">
+							<img class="icon" alt="" src="./public/request-quote.svg" />
+							<div class="notif">1</div>
+						</div>
+						<div class="label">Quotes</div>
+					</button>
+					<button class="button" onclick="alert('Clicked')">
+						<div class="icon-container">
+							<img class="icon" alt="" src="./public/inventory.svg" />
+						</div>
+						<div class="label">Document Checklists</div>
+					</button>
+					<button class="button" onclick="alert('Clicked')">
+						<div class="icon-container">
+							<img class="icon" alt="" src="./public/tv-options.svg" />
+						</div>
+
+						<div class="label">Project Status</div>
+					</button>
+
+					<a href="#">
+						<div class="button">
+							<div class="icon-container">
+								<img class="icon" alt="" src="./public/flight.svg" />
+							</div>
+
+							<div class="label">Operator & Aircraft Information</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="button">
+							<div class="icon-container">
+								<img class="icon" alt="" src="./public/contact-support.svg" />
+							</div>
+
+							<div class="label">FAQ</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="button">
+							<div class="icon-container">
+								<img class="icon" alt="" src="./public/payments.svg" />
+							</div>
+
+							<div class="label">Invoice</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

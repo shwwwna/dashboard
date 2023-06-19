@@ -1,0 +1,166 @@
+/* @import '~@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css'; */
+@import '/salesforce-lightning-design-system.css';
+
+
+.header-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.header-container strong {
+  font-size: var(--font-size-large);
+}
+.header-container p {
+  font-size: var(--font-size-mini);
+  margin: 0;
+}
+
+.icon-container{
+  position: relative;
+}
+.icon {
+  width: 65px;
+  height: 65px;
+}
+.label {
+  line-height: 120%;
+  height: 18px;
+}
+.button{
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: var(--gap-3xs);
+  border-radius: var(--br-5xs);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      transparent 30%
+    ),
+    #1a1f28;
+  border: 2px solid var(--color-gray-100);
+  overflow: hidden;
+  z-index: 0;
+  min-height: 150px;
+}
+
+.button::before{
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-3xs);
+  border: 5px solid var(--color-black);
+}
+.button::after{
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-3xs);
+  border: 5px solid var(--color-black);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3),
+      transparent 50%
+    ),
+    #1a1f28;
+    opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+.button:hover::after{
+    opacity: 1;
+
+}
+
+
+.notif {
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  z-index: 2;
+  font-size: var(--font-size-smi);
+  border-radius: 50%;
+  background-color: #c23934;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.button-group,
+.container,
+.page-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button-group {
+  align-self: stretch;
+  height: 150px;
+  flex-direction: row;
+  gap: var(--gap-xl);
+}
+.container,
+.page-wrapper {
+  flex-direction: column;
+}
+.button-container {
+  display: grid;
+  align-self: stretch;
+  font-size: var(--font-size-mini);
+
+  /**
+   * User input values.
+   */
+  --grid-layout-gap: 20px;
+  --grid-column-count: 3;
+  --grid-item--min-width: 175px;
+
+  /**
+   * Calculated values.
+   */
+  --gap-count: calc(var(--grid-column-count) - 1);
+  --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+  --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+  grid-gap: var(--grid-layout-gap);
+}
+.container,
+.page-wrapper {
+  overflow: hidden;
+}
+.container {
+  align-self: stretch;
+  flex: 1;
+  padding: 10px var(--padding-xl);
+  gap: var(--gap-3xs);
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+}
+.page-wrapper {
+  background-color: #080d18;
+  text-align: center;
+  color: var(--color-white);
+  font-family: var(--font-assistant);
+  min-height: 100vh;
+}

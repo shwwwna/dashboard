@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-assistant: Assistant;
+
+  /* font sizes */
+  --font-size-large: 24px;
+  --font-size-mini: 15px;
+  --font-size-smi: 13px;
+
+  /* Colors */
+  --color-gray-100: rgba(255, 255, 255, 0.39);
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* Gaps */
+  --gap-3xs: 10px;
+  --gap-xl: 20px;
+
+  /* Paddings */
+  --padding-xl: 20px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+  --br-3xs: 3px;
+}
+a .button{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover, a:focus{
+  color: white;
+  text-decoration: none !important;
+}
