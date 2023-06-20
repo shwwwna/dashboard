@@ -139,3 +139,27 @@
 	font-family: var(--font-assistant);
 	min-height: 100vh;
 }
+
+/* TEMPORARY NAVBAR */
+.divsite-header {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 12px var(--padding-xl);
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-final2b-all20black20and-icon {
+  position: relative;
+  height: 30px;
+  object-fit: cover;
+}
+.menu-fill0-wght100-grad200-ops-icon {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
